@@ -92,6 +92,28 @@ button:hover {
     height: 280px;
 }
 
+/* Animated Ball Styles */
+.animated-ball {
+    background-image: url(images/field.jpg);
+    background-size: cover;
+}
+.ball
+{
+    width: 800px;
+    height: 200px;
+}
+.ball img
+{
+    float: left;
+    width: 200px;
+    height: 200px;   
+    transition: 1s Ease;
+}
+.ball:hover img
+{
+    transform: translate(630px, 0px) rotate(360deg);
+}
+
 /* Footer Style */
 .footer {
     display: flex;
@@ -137,6 +159,9 @@ button:hover {
         width: 320px;
     }
     .awards {
+        display: none;
+    }
+    .animated-ball {
         display: none;
     }
 }
