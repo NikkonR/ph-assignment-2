@@ -97,20 +97,17 @@ button:hover {
     background-image: url(images/field.jpg);
     background-size: cover;
 }
-.ball
-{
+.ball {
     width: 800px;
     height: 200px;
 }
-.ball img
-{
+.ball img {
     float: left;
     width: 200px;
     height: 200px;   
     transition: 1s Ease;
 }
-.ball:hover img
-{
+.ball:hover img {
     transform: translate(630px, 0px) rotate(360deg);
 }
 
