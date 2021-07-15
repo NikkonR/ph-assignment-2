@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* Common CSS Properties */
+header, body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Top Banner Style */
+header {
+    background-color: #2D25A0;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+}
+h1 {
+    color: #FFFFFF;
+    font-size: 64px;
+}
+.half-width {
+    width: 45%;
+}
+.half-width img {
+    width: 550px;
+}
+button {
+    color: #FFFFFF;
+    background-color: #E02C6D;
+    border: none;
+    padding: 10px 24px;
+}
+button:hover {
+    background-color: white;
+    color: #E02C6D;
+    cursor: pointer;
+}
+
+/* Player Info Section */
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.player {
+    width: 300px;
+    margin: 20px;
+    padding: 15px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #00000030;
+}
+.player:hover {
+    transform: scale(1.05);
+}
+.player .thumbnail img {
+    width: 300px;
+    height: 256px;
+}
+.player-title {
+    font-size: 28px;
+    margin-top: 16px;
+    margin-bottom: 0;
+}
+
+/* Footer Style */
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+.footer-logo img {
+    width: 484px;
+}
+.social-icons {
+    font-size: 24px;
+    color: #969BAB;
+}
+.social-icons i {
+    background-color: lightgray;
+    border-radius: 50%;
+    padding: 10px;
+    margin-left: 8px;
+}
+.social-icons i:hover {
+    background-color: black;
+    cursor: pointer;
+}
+
+/* Mobile Devices */
+@media only screen and (max-width:688px) {
+    header {
+        display: block;
+        padding: 20px;
+    }
+    header img {
+        width: 340px !important;
+        margin-top: 40px;
+    }
+    .container {
+        width: 100%;
+    }
+    .players {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .footer-logo img {
+        width: 320px;
+    }
+}
+
+/* Tablet Devices */
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+    header {
+        display: block;
+        padding: 20px;
+    }
+    header img {
+        margin-top: 40px;
+    }
+    .container {
+        width: 100%;
+    }
+    .players {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
